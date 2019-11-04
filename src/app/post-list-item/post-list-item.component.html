@@ -1,0 +1,19 @@
+<div [ngClass]="{'list-group-item': true,
+                'list-group-item-success': loveIts > '0',
+                'list-group-item-danger': loveIts < '0'}">
+	<div class="titredate" [ngStyle]="{color: getCouleur()}">
+		<h2>{{title}}</h2> 
+		<p>{{created_at | date: 'M/dd/yyyy, h:mm a' }}</p> 
+	</div>
+	<p>{{content}}</p>	
+	
+	<button  style="color:white;background-color:green;" (click)="increment()" >
+		Love it!
+	</button> 
+
+	<button  style="color:white;background-color:red;" (click)="decrement()">
+		Dont love it!
+	</button> 
+
+</div>
+

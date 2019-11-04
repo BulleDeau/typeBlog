@@ -1,0 +1,8 @@
+.titredate {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.h2{
+	text-align: left;
+}
